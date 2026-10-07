@@ -1,0 +1,20 @@
+:root{--bg:#f4f6f2;--fg:#1b2a1b;--card:#fff;--ac:#1f7a3d;--mut:#6b7a6b;--bd:#dfe5dc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a12;--fg:#e8f0e6;--card:#1a251b;--ac:#4cc26f;--mut:#93a493;--bd:#2b3a2c}}
+:root[data-theme="dark"]{--bg:#111a12;--fg:#e8f0e6;--card:#1a251b;--ac:#4cc26f;--mut:#93a493;--bd:#2b3a2c}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.4 system-ui,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:14px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0}
+h1{font-size:20px;margin:0}h2{font-size:17px;margin:0 0 8px}h3{font-size:14px;margin:12px 0 4px}
+input,select{width:100%;padding:9px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit;margin:3px 0}
+button{background:var(--ac);color:#fff;border:0;border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer;margin:4px 4px 4px 0}
+button.s{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:10px 0}.tabs button{white-space:nowrap}
+.top{display:flex;justify-content:space-between;align-items:center}
+.m{color:var(--mut);font-size:13px}.err{color:#c0392b}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+.p{text-align:center;cursor:pointer;padding:10px;border:1px solid var(--bd);border-radius:12px;background:var(--card)}
+.av{width:46px;height:46px;border-radius:50%;background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 4px}
+.sc{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:6px;text-align:right;border-bottom:1px solid var(--bd)}th:first-child,td:first-child{text-align:left}
+.st{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px}.st div{background:var(--bg);border-radius:8px;padding:8px;text-align:center}.st b{display:block;font-size:18px}
+.r{display:grid;grid-template-columns:1.4fr repeat(5,1fr);gap:4px;align-items:center;font-size:13px}.r input{padding:6px}
